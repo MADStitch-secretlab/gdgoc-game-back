@@ -1,6 +1,7 @@
 import { Body, Controller, Get, Post, Query } from '@nestjs/common';
 import { ReactionService } from './reaction.service';
-import { CreateReactionDto, Difficulty } from './dto/create-reaction.dto';
+import { CreateReactionDto } from './dto/create-reaction.dto';
+import type { Difficulty } from './dto/create-reaction.dto';
 
 @Controller()
 export class ReactionController {

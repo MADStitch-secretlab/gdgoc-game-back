@@ -14,11 +14,11 @@ async function bootstrap() {
 
   app.enableCors({
     origin: [
-      'http://localhost:5000',
+      'http://localhost:5001',
       'https://port-next-gdgoc-game-front-m4h5z3nf13944b7f.sel4.cloudtype.app'
 
     ]
   });
-  await app.listen(process.env.PORT ?? 5000);
+  await app.listen(5001);
 }
 bootstrap();
